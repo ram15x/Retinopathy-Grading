@@ -1,0 +1,19 @@
+[project]
+name = "retinolab"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "torchvision>=0.17", "numpy", "scipy", "scikit-learn", "matplotlib", "opencv-python-headless", "pillow", "medmnist"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+# long lines and zip(strict=) are style only here
+ignore = ["E501", "B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# so plain `pytest` can import the package
+pythonpath = ["."]
