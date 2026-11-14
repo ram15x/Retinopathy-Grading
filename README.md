@@ -131,6 +131,10 @@ docs/        charts used in this readme
 tools/       small helper scripts
 ```
 
+## More
+
+Notes on the results and on running it: [docs/notes.md](docs/notes.md).
+
 ## License
 
 MIT

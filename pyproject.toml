@@ -6,7 +6,6 @@ dependencies = ["torch>=2.2", "torchvision>=0.17", "numpy", "scipy", "scikit-lea
 
 [tool.ruff]
 line-length = 120
-extend-exclude = ["legacy"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]

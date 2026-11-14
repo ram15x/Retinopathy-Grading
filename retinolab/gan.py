@@ -105,7 +105,7 @@ class GanConfig:
     seed: int = 0
 
 
-# the four recipes compared in the ablation. A is the original notebook's recipe
+# the four recipes compared in the ablation. A is the plain baseline recipe
 # (bce loss, no normalisation tricks, dropout in D, no augmentation, no ema)
 RECIPES = {
     "A_original": GanConfig("A_original", "bce", False, False, False, lr=1e-4, betas=(0.9, 0.999), dropout=0.3),
